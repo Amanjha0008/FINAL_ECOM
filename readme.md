@@ -1,44 +1,38 @@
-<h1 style="text-align: center;">DMShop- Platforma de e-commerce</h1>
-<p>Descarcati aplicatia, introduceti folderul in VsCode si executati comanda de mai jos:</p>
+<h1 style="text-align: center;">HAMNSKART - E-commerce Platform</h1>
+<p>Download the application, place the folder in VsCode, and run the following command:</p>
 <code>npm run dev</code>
-<p>Cont admin:admin@admin.com Password:123456</p>
-<p>Cont User:dragos@gmail.com Password:123456</p>
-
-<h3>Descriere</h3>
-<p>DMShop este o platforma de e-commerce care permite utilizatorilor sa navigheze prin produsele din magazin, sa adauge produse in cosul de cumparaturi si sa finalizeze comanda.</p>
-<h3>Tehnologii folosite</h3>
+<p>Admin account: admin@admin.com Password: 123456</p>
+<p>User account: dragos@gmail.com Password: 123456</p>
+<h3>Description</h3>
+<p>DMShop is an e-commerce platform that allows users to browse through store products, add items to their shopping cart, and complete the checkout process.</p>
+<h3>Technologies Used</h3>
 <h5>Frontend:</h5>
-<p> <b>React:</b>o biblioteca JavaScript pentru crearea de interfete de utilizator.</p>
-<p> <b>React-Bootstrap:</b> un set de componente pentru React, bazat pe framework-ul Bootstrap.</p>
-<p> <b>React-Router:</b> o biblioteca pentru rutarea paginilor in React.</p>
-<p> <b>Redux(si pe partea de backend):</b>o biblioteca open-source pentru managementul starii aplicatiei.</p>
-
+<p><b>React:</b> A JavaScript library for building user interfaces.</p>
+<p><b>React-Bootstrap:</b> A set of components for React, based on the Bootstrap framework.</p>
+<p><b>React-Router:</b> A library for routing pages in React.</p>
+<p><b>Redux (also on the backend):</b> An open-source library for managing application state.</p>
 <h5>Backend:</h5>
-<p><b>Node.js:</b> Un mediu de rulare JavaScript construit pe motorul V8 de la Chrome, folosit pentru a crea aplicatii back-end.</p>
-<p><b>Express.js:</b> Un cadru usor de utilizat pentru Node.js, care simplifica dezvoltarea serverului si rutarea.</p>
-<p><b>MongoDB:</b> O baza de date NoSQL scalabila si flexibila, care stocheaza date intr-un format similar JSON.</p>
-<p><b>Mongoose:</b> Un ODM (Object Data Modeling) pentru MongoDB, care simplifica lucrul cu baze de date.</p>
-<p><b>JSON Web Tokens (JWT):</b> Un standard deschis pentru a transmite informatii intre partile implicate intr-un format JSON compact.</p>
-<h3>Structura:</h3>
+<p><b>Node.js:</b> A JavaScript runtime built on Chrome's V8 engine, used for creating backend applications.</p>
+<p><b>Express.js:</b> A lightweight framework for Node.js that simplifies server development and routing.</p>
+<p><b>MongoDB:</b> A scalable and flexible NoSQL database that stores data in a JSON-like format.</p>
+<p><b>Mongoose:</b> An ODM (Object Data Modeling) library for MongoDB that simplifies working with the database.</p>
+<p><b>JSON Web Tokens (JWT):</b> An open standard for securely transmitting information between parties as a JSON object.</p>
+<h3>Structure:</h3>
 <h5>Frontend:</h5>
-<p><b>actions:</b> contine actiunile care sunt apelate in interactiunea utilizatorului cu aplicatia.</p>
-<p><b>components:</b> contine componente React reutilizabile pentru a construi interfata de utilizator.</p>
-<p><b>constants:</b> contine constante utilizate pentru a defini tipurile actiunilor.</p>
-<p><b>reducers:</b> contine reduceri care gestioneaza starea aplicatiei si actualizeaza componentele corespunzatoare.</p>
-<p><b>screens:</b> contine componente React care reprezinta paginile aplicatiei.</p>
-<p><b>store.js:</b> contine configurarea magazinului Redux( care a fost folosit pentru a gestiona starea globala a aplicatiei si pentru a face schimbul de informatii intre diferite componente mai usor si mai eficient.)</p>
-<p><b>App.js:</b> Fisierul principal al aplicatiei React, care definește rutarea si navigarea intre diferitele componente ale aplicatiei.</p>
-
-Backend:
-
-<p>Aplicatia web este impartita in mai multe parti esentiale, care includ:</p>
-
-<p><b>Controllers:</b> Aceste fisiere gestioneaza logica si datele aplicatiei.</p>
-<p><b>Data:</b> Fisierele care contin datele predefinite pentru aplicatie, precum produsele si utilizatorii.</p>
-<p><b>Middleware:</b> Functiile care sunt apelate inaintea executarii controlerelor, pentru a prelucra datele sau a gestiona autentificarea.</p>
-<p><b>Models:</b> Schema bazei de date si structura documentelor MongoDB.</p>
-<p><b>Routes:</b> Rutarea si organizarea diferitelor cereri API.</p>
-<p><b>server.js:</b> fisierul principal din backend-ul aplicatiei si este responsabil pentru pornirea serverului si gestionarea rutelelor HTTP.</p>
-
-<h5>Comunicarea cu backend-ul</h5>
-<p>Comunicarea cu backend-ul este gestionata prin intermediul actiunilor din directorul "actions". Actiunile efectueaza cereri HTTP catre API-ul backend-ului folosind biblioteca "axios". Dupa ce raspunsul este primit, actiunile actualizeaza starea aplicatiei prin apelarea reducer-ilor corespunzatori. De exemplu, actiunea "addToCart" efectueaza o cerere GET pentru a obtine informatiile despre un produs si apoi adauga produsul in cosul de cumparaturi prin apelarea reducer-ului "cartReducer".</p>
+<p><b>actions:</b> Contains the actions that are called during user interactions with the application.</p>
+<p><b>components:</b> Contains reusable React components for building the user interface.</p>
+<p><b>constants:</b> Contains constants used to define action types.</p>
+<p><b>reducers:</b> Contains reducers that manage the application's state and update the corresponding components.</p>
+<p><b>screens:</b> Contains React components that represent the application's pages.</p>
+<p><b>store.js:</b> Contains the Redux store configuration, which is used to manage the global state of the application and facilitate information exchange between different components more easily and efficiently.</p>
+<p><b>App.js:</b> The main file of the React application, which defines the routing and navigation between different components of the application.</p>
+<h5>Backend:</h5>
+<p>The web application is divided into several essential parts, including:</p>
+<p><b>Controllers:</b> These files handle the application's logic and data.</p>
+<p><b>Data:</b> Files that contain predefined data for the application, such as products and users.</p>
+<p><b>Middleware:</b> Functions that are called before the controllers execute, to process data or handle authentication.</p>
+<p><b>Models:</b> Database schema and the structure of MongoDB documents.</p>
+<p><b>Routes:</b> Routing and organizing various API requests.</p>
+<p><b>server.js:</b> The main file in the backend of the application, responsible for starting the server and handling HTTP routes.</p>
+<h5>Communication with the Backend</h5>
+<p>Communication with the backend is managed through actions in the "actions" directory. Actions make HTTP requests to the backend API using the "axios" library. After receiving the response, the actions update the application state by calling the corresponding reducers. For example, the "addToCart" action makes a GET request to fetch product information and then adds the product to the shopping cart by calling the "cartReducer".</p>
